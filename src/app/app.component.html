@@ -1,14 +1,31 @@
-<h1 style="background-color: rgb(144, 134, 231);; display: flex; justify-content: center;">Local Storage
-  in Angular 17
-</h1>
+<div class="note">please open inspect and application section for session storage</div>
+<div>
 
-<div style="display: flex; ">
-  <button (click)="saveData()">Save Data</button>
-  <!-- <button (click)="getData()">Get Data</button> -->
-  <button (click)="removeData()">Remove Data</button>
-  <button (click)="clearData()">Clear All Data</button>
+
+  <h1 style="background-color: rgb(144, 134, 231);; display: flex; justify-content: center;">Local Storage
+    in Angular 17
+  </h1>
+  <div class="local" style="display: flex; ">
+    <button (click)="saveLocalData()">Save Data</button>
+    <button (click)="removeLocalData()">Remove Data</button>
+    <button (click)="clearLocalData()">Clear All Data</button>
+  </div>
+  <div style="padding: 10px;">{{'1:' + localData}}</div>
+  <div style="padding: 10px;">{{'2:' + localData1}}</div>
+
 </div>
-<div style="background-color: black; color: #fff;">please open inspect and application section for session storage</div>
+<div>
+  <h1 style="background-color: rgb(134, 231, 166); display: flex; justify-content: center;">Session Storage
+    in Angular 17
+  </h1>
 
-<div style="padding: 10px;">{{'1:' + data1}}</div>
-<div style="padding: 10px;">{{'2:' + data2}}</div>
+  <div class="session" style="display: flex; ">
+    <button (click)="saveSessionData()">Save Data</button>
+    <button (click)="removeSessionData()">Remove Data</button>
+    <button (click)="clearSessionData()">Clear All Data</button>
+  </div>
+
+  <div style="padding: 10px;">{{'1:' + sessionData}}</div>
+  <div style="padding: 10px;">{{'2:' + sessionData1}}</div>
+
+</div>

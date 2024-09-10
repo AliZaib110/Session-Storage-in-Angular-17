@@ -1,5 +1,14 @@
-button {
-    /* color: #; */
+.session button {
+
+    background-color: rgb(134, 231, 166);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.local button {
     background-color: rgb(144, 134, 231);
     padding: 10px;
     margin: 10px;
@@ -16,4 +25,9 @@ div {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
+}
+
+.note {
+    background-color: black;
+    color: #fff;
 }
