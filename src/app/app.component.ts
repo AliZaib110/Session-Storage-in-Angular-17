@@ -45,7 +45,6 @@ export class AppComponent {
     localStorage.clear();
     this.getLocalData();
   }
-
   // session storage
 
   saveSessionData() {
