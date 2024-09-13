@@ -31,19 +31,15 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.factorialFinder(3);
+    this.sortArray();
   }
 
-  factorialFinder(num: number) {
-    if (num == 0 || num == 1) {
-      return 1;
-    } else {
-      for (let i = num - 1; i >= 1; i--) {
-        num = num * i;
-      }
-      console.log(num, 'num');
-      return num;
-    }
+  sortArray() {
+    let arr1 = [0, 3, 4, 31];
+    let arr2 = [4, 6, 30];
+    let mergedArr = [...arr1, ...arr2].sort((a, b) => a - b);
+    // let mergedArr = [...arr1, ...arr2].sort((a, b) => b - a);
+    console.log(mergedArr, 'merged arrays');
   }
 
   // local storage
